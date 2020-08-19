@@ -1,0 +1,60 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "E:\\workspace\\ImgProcess",
+      "sdkFolder": "E:\\Android\\sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "E:\\workspace\\ImgProcess\\app\\build\\intermediates",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "E:\\workspace\\ImgProcess\\app",
+      "makeFile": "E:\\workspace\\ImgProcess\\app\\src\\main\\jni\\Android.mk",
+      "buildSystem": "NDK_BUILD",
+      "compilerSettingsCacheFolder": "E:\\workspace\\ImgProcess\\.cxx",
+      "cxxFolder": "E:\\workspace\\ImgProcess\\app\\.cxx",
+      "ndkFolder": "E:\\Android\\android-ndk-r16b",
+      "ndkVersion": "16.1.4479499",
+      "ndkSupportedAbiList": [
+        "ARMEABI",
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "MIPS",
+        "MIPS64",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "release",
+    "soFolder": "E:\\workspace\\ImgProcess\\app\\build\\intermediates\\ndkBuild\\release\\lib",
+    "objFolder": "E:\\workspace\\ImgProcess\\app\\build\\intermediates\\ndkBuild\\release\\obj\\local",
+    "jsonFolder": "E:\\workspace\\ImgProcess\\app\\.cxx\\ndkBuild\\release",
+    "gradleBuildOutputFolder": "E:\\workspace\\ImgProcess\\app\\.cxx\\cxx\\release",
+    "isDebuggableEnabled": false,
+    "validAbiList": [
+      "ARMEABI_V7A"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "ARMEABI_V7A",
+  "abiPlatformVersion": 24,
+  "cxxBuildFolder": "E:\\workspace\\ImgProcess\\app\\.cxx\\ndkBuild\\release\\armeabi-v7a",
+  "jsonFile": "E:\\workspace\\ImgProcess\\app\\.cxx\\ndkBuild\\release\\armeabi-v7a\\android_gradle_build.json",
+  "gradleBuildOutputFolder": "E:\\workspace\\ImgProcess\\app\\.cxx\\cxx\\release\\armeabi-v7a",
+  "objFolder": "E:\\workspace\\ImgProcess\\app\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi-v7a",
+  "buildCommandFile": "E:\\workspace\\ImgProcess\\app\\.cxx\\ndkBuild\\release\\armeabi-v7a\\build_command.txt",
+  "buildOutputFile": "E:\\workspace\\ImgProcess\\app\\.cxx\\ndkBuild\\release\\armeabi-v7a\\build_output.txt",
+  "modelOutputFile": "E:\\workspace\\ImgProcess\\app\\.cxx\\ndkBuild\\release\\armeabi-v7a\\build_model.json",
+  "jsonGenerationLoggingRecordFile": "E:\\workspace\\ImgProcess\\app\\.cxx\\ndkBuild\\release\\armeabi-v7a\\json_generation_record.json",
+  "compileCommandsJsonFile": "E:\\workspace\\ImgProcess\\app\\.cxx\\ndkBuild\\release\\armeabi-v7a\\compile_commands.json"
+}

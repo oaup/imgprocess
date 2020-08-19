@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "29.0.2"
+
+    defaultConfig {
+        applicationId "net.northking.ocr.imgprocess"
+        minSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        ndk{
+            moduleName "nkImageLib"
+            stl "stlport_static"
+            ldLibs "log", "z", "m"
+            abiFilters "armeabi-v7a"
+        }
+    }
+    // add begin
+    sourceSets.main.jni.srcDirs = []
+    // add 2015/06/16
+   /* productFlavors{
+        x86{
+            ndk{
+                abiFilter "x86"
+            }
+        }
+        arm7{
+            ndk{
+                abiFilter "armeabi-v7a"
+            }
+        }
+        arm{
+            ndk{
+                abiFilters "armeabi"
+            }
+        }
+    }*/
+    // end
+  /*  task ndkBuild(type: Exec, description: 'Compile JNI source via NDK') {
+        def ndkDir = "E:/Android/android-ndk-r16b"
+        commandLine "$ndkDir/ndk-build.cmd",
+                'NDK_PROJECT_PATH=build/intermediates/ndk',
+                'NDK_LIBS_OUT=src/main/jniLibs',
+                'APP_BUILD_SCRIPT=src/main/jni/Android.mk',
+                'NDK_APPLICATION_MK=src/main/jni/Application.mk'
+    }
+
+    tasks.withType(JavaCompile) {
+        compileTask -> compileTask.dependsOn ndkBuild
+    }*/
+    externalNativeBuild {
+        ndkBuild {
+            path file('src/main/jni/Android.mk')
+        }
+    }
+    // add end
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            jniDebuggable true
+            renderscriptDebuggable true
+            debuggable true
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:22.1.1'
+}
